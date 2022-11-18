@@ -135,6 +135,7 @@ font-family: 'Raleway';
 .site-nav .link:hover,
 .site-nav .link:focus{
   color: var(--blue-color);
+  
 }
 
 
@@ -143,8 +144,23 @@ font-family: 'Raleway';
   padding-top: 32px;
   padding-bottom: 32px;
   margin-left: auto;
+  
 
 }
+
+.contacts-nav a{
+  display: flex;
+  align-items: center;
+  
+}
+
+.contacts-nav .icon{
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+
+
 
 .contacts-nav .item:not(:last-child){
   margin-right: 50px;
@@ -164,16 +180,27 @@ font-family: 'Raleway';
 .contacts-nav .link:hover,
 .contacts-nav .link:focus{
   color:var(--blue-color);
+  
 }
 
 /* Шапка */
 
 .hero{
+  max-width: 1600px;
+  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-top: 0;
   margin-bottom: 0;
   background-color:var(--grey-bg-color);
+
+  background-image: linear-gradient(to right, 
+  rgba(47, 48, 58, 0.4), 
+  rgba(47, 48, 58, 0.4)), 
+  url('../images/hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: ;
 
   text-align: center;
 
@@ -352,6 +379,16 @@ color: var(--secondary-color-text);
 .members .item:nth-child(4n){
   margin-right: 0;
 }
+
+/* Постійні клієнти */
+.clients .section-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
 
 /* Футер */
 .footer{
