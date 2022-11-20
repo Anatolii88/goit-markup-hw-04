@@ -7,6 +7,7 @@
   --grey-bg-color: #2F303A;
   --team-bg-color: #F5F4FA;
   --contacts-color: rgba(255, 255, 255, 0.6);
+  --social-icons-color: #afb1b8;
 }
 
 /* Глобальный border-box */
@@ -251,6 +252,18 @@ color: var(--secondary-color-text);
   padding-bottom: 94px;
 }
 
+.features-sprite{
+  display: block;
+  height: 120px;
+  padding: 0;
+  padding: 25px 100px;
+  margin: 0;
+  margin-bottom: 30px;
+  background-color: var(--team-bg-color);
+}
+
+
+
 .features{
   display: flex;
   flex-wrap: wrap;
@@ -327,9 +340,56 @@ color: var(--secondary-color-text);
   text-align: center;
 }
 
+.social{
+  display: flex;
+  justify-content: center;
+}
+
+.social .link{
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  margin: 0;
+  border-radius: 50%;
+  color: var(--social-icons-color);
+  background-color: var(--white-color);
+  
+}
+
+.social .link:hover{
+background-color: var(--blue-color);
+color: var(--white-color);
+}
+
+
+
+.social-item{
+  margin-right: 10px;
+
+}
+
+.social-item:last-child{
+  margin-right: 0;
+}
+
+
+
+.social-sprite{
+  padding: 0;
+  margin: 0;
+  fill: currentColor;
+}
+
+.social-sprite:hover,
+.social-sprite:focus{
+fill: var(--white-color);
+}
+
 .members .text{
   padding: 0;
   margin: 0;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
@@ -370,10 +430,15 @@ color: var(--secondary-color-text);
   margin-right: 30px;
   width: 270px;
   border-radius: 0px 0px 4px 4px;
-
+  box-shadow: 
+  0px 1px 3px 
+  rgba(0, 0, 0, 0.12), 
+  0px 1px 1px 
+  rgba(0, 0, 0, 0.14), 
+  0px 2px 1px 
+  rgba(0, 0, 0, 0.2);
   background-color: var(--white-color);
 
-  
 }
 
 .members .item:nth-child(4n){
@@ -381,13 +446,56 @@ color: var(--secondary-color-text);
 }
 
 /* Постійні клієнти */
-.clients .section-title{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
+
+.section.clients{
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
+.clients .section-title{
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.customers{
+  display: flex;
+  justify-content: center;
+  
+
+}
+
+.customers .link{
+  display: block;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border: 1px solid var(--social-icons-color);
+  border-radius: 4px;
+  color: var(--social-icons-color);
+}
+
+.customers-item{
+  margin-right: 10px;
+}
+
+.customers-item:last-child{
+  margin-right: 0;
+}
+
+.customers-sprite{
+  fill: currentColor;
+}
+
+.customers .link:hover{
+  color: var(--blue-color);
+  border: 1px solid var(--blue-color)
+}
+
 
 
 /* Футер */
