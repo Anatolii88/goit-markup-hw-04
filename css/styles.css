@@ -8,6 +8,7 @@
   --team-bg-color: #F5F4FA;
   --contacts-color: rgba(255, 255, 255, 0.6);
   --social-icons-color: #afb1b8;
+  --footer-icons-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Глобальный border-box */
@@ -546,6 +547,72 @@ fill: var(--white-color);
   margin-bottom: 9px;
 }
 
+
+.footer-nav{
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-social{
+
+}
+
+
+.logo-and-contacts{
+  
+  margin-right: 70px;
+}
+
+.footer-social .text{
+    margin-bottom: 20px;
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+
+.footer-sprite{
+  display: flex;
+}
+
+
+
+.footer-sprite .link{
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px 12px;
+  
+  border-radius: 50%;
+  color: var(--white-color);
+  background-color: var(--footer-icons-color);
+
+}
+
+.sprites{
+  fill: currentColor;
+}
+
+.footer-sprite .link:hover,
+.footer-sprite .link:focus{
+  background-color: var(--blue-color);
+  
+}
+
+.footer-sprite .item{
+margin-right: 10px;
+}
+
+.footer-sprite .item:last-child{
+  margin-right: 0;
+}
+
+
+
+
 /* Оформлення сторінки Студія */
 
 /* Фільтри */
@@ -581,7 +648,10 @@ fill: var(--white-color);
 .filters .button:hover,
 .filters .button:focus{
   color: var(--white-color);
-  background-color:var(--blue-color) ;
+  background-color:var(--blue-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -638,6 +708,14 @@ color: var(--primary-color-text);
   margin-right: 30px;
   margin-bottom: 30px;
 }
+
+.work-list .item:hover,
+.work-list .item:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 
 .work-list .item:nth-child(3n){
   margin-right: 0;
