@@ -192,8 +192,7 @@ font-family: 'Raleway';
   height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 auto;
   background-color:var(--grey-bg-color);
 
   background-image: linear-gradient(to right, 
@@ -254,10 +253,12 @@ color: var(--secondary-color-text);
 }
 
 .features-sprite{
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
   padding: 0;
-  padding: 25px 100px;
+  
   margin: 0;
   margin-bottom: 30px;
   background-color: var(--team-bg-color);
@@ -358,7 +359,8 @@ color: var(--secondary-color-text);
   
 }
 
-.social .link:hover{
+.social .link:hover,
+.social .link:focus{
 background-color: var(--blue-color);
 color: var(--white-color);
 }
@@ -471,10 +473,12 @@ fill: var(--white-color);
 }
 
 .customers .link{
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
+  
   border: 1px solid var(--social-icons-color);
   border-radius: 4px;
   color: var(--social-icons-color);
@@ -492,7 +496,8 @@ fill: var(--white-color);
   fill: currentColor;
 }
 
-.customers .link:hover{
+.customers .link:hover,
+.customers .link:focus{
   color: var(--blue-color);
   border: 1px solid var(--blue-color)
 }
